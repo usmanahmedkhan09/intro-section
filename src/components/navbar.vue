@@ -13,12 +13,6 @@
       <li>Careers</li>
       <li>About</li>
     </ul>
-    <!-- <div class="logo_with_items">
-      <Logo />
-      <Dropdown :title="'Features'" :list="menu_one" />
-      <Dropdown :title="'Company'" :list="menu_two" />
-    </div> -->
-
     <div class="buttons">
       <button>Login</button>
       <button class="active">Register</button>
@@ -36,13 +30,23 @@ export default defineComponent({
     Dropdown,
   },
   setup() {
-    const menu_one = ref(["Todo List ", "Calender", "Reminders", "Planning"]);
+    const menu_one = ref([
+      { name: "Todo List", icon: "todo-list" },
+      { name: "Calender", icon: "calender" },
+      { name: "Planning", icon: "planning" },
+      { name: "Reminder", icon: "reminder" },
+    ]);
 
-    const menu_two = ref(["History", "Our Team", "Blog"]);
+    const menu_two = ref([
+      { name: "History", icon: "" },
+      { name: "Our Team", icon: "" },
+      { name: "Blog", icon: "" },
+    ]);
 
     const getImageUrl = (name: string) => {
       return new URL(`../assets/images/${name}`, import.meta.url).href;
     };
+
     return {
       menu_one,
       menu_two,
