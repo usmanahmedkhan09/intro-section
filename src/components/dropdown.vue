@@ -1,12 +1,12 @@
 <template>
-  <div class="dropdown">
-    <div class="dropdown--header">
+  <div class="dropdown" ref="dropdown">
+    <div class="dropdown--header" @click.stop="isOpen = !isOpen">
       <p>
         {{ title }}
       </p>
-      <ArrowDown @click="isOpen = !isOpen" />
+      <ArrowDown />
     </div>
-    <div ref="dropdown" class="dropdown--body" :class="{ open: isOpen }">
+    <div v-if="isOpen" class="dropdown--body">
       <ul>
         <li v-for="(item, index) in list" :key="index">{{ item }}</li>
       </ul>
@@ -16,6 +16,7 @@
 <script lang="ts">
 import { defineComponent, ref, onMounted } from "vue";
 import ArrowDown from "../assets/svg/arrowdown.vue";
+import type { OnClickOutsideHandler } from "@vueuse/core";
 import { onClickOutside } from "@vueuse/core";
 
 export default defineComponent({
@@ -25,19 +26,17 @@ export default defineComponent({
   props: ["title", "list"],
   setup() {
     const isOpen = ref(false);
+
     const dropdown = ref();
 
-    const close = () => {
+    onClickOutside(dropdown, (event) => {
       isOpen.value = false;
-    };
-
-    onMounted(() => {
-      onClickOutside(dropdown, close);
     });
 
     return {
       isOpen,
       dropdown,
+      close,
     };
   },
 });
