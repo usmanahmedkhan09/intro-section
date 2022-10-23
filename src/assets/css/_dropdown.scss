@@ -2,12 +2,14 @@
     display: flex;
     width: 100px;
     position: relative;
+    align-self: baseline;
 
     &--header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: inherit;
+        width: fit-content;
+        gap : 10px;
     }
     
     &--body {

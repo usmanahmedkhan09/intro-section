@@ -1,11 +1,27 @@
 <template>
   <div class="navbar">
-    <Logo />
-    <Dropdown :title="'Features'" :list="menu_one" />
-    <Dropdown :title="'Company'" :list="menu_two" />
+    <ul class="list">
+      <li>
+        <Logo />
+      </li>
+      <li>
+        <Dropdown :title="'Features'" :list="menu_one" />
+      </li>
+      <li>
+        <Dropdown :title="'Company'" :list="menu_two" />
+      </li>
+      <li>Careers</li>
+      <li>About</li>
+    </ul>
+    <!-- <div class="logo_with_items">
+      <Logo />
+      <Dropdown :title="'Features'" :list="menu_one" />
+      <Dropdown :title="'Company'" :list="menu_two" />
+    </div> -->
+
     <div class="buttons">
       <button>Login</button>
-      <button>Register</button>
+      <button class="active">Register</button>
     </div>
   </div>
 </template>
