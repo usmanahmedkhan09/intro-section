@@ -53,4 +53,26 @@
       
     }
 
+    .menu_icon {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width : 768px) {
+    .navbar {
+
+        .list {
+            li:not(:first-child) {
+                display: none;
+            }
+        }
+        .buttons {
+            display: none;
+        }
+
+        .menu_icon {
+            display: inline-block;
+        }
+    }
 }

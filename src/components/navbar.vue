@@ -17,17 +17,22 @@
       <button>Login</button>
       <button class="active">Register</button>
     </div>
+    <div class="menu_icon">
+      <MenuIcon />
+    </div>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import Logo from "@/assets/svg/logo.vue";
 import Dropdown from "@/components/dropdown.vue";
+import MenuIcon from "@/assets/svg/menu.vue";
 
 export default defineComponent({
   components: {
     Logo,
     Dropdown,
+    MenuIcon,
   },
   setup() {
     const menu_one = ref([
