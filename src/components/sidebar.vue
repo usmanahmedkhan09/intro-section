@@ -1,8 +1,18 @@
 <template>
   <div class="backdrop" :class="sidebar ? 'open' : ''">
-    <aside>
-      <CrossIcon @click="$emit('close')" />
-    </aside>
+    <div class="sidebar">
+      <div class="icon">
+        <CrossIcon @click="$emit('close')" />
+      </div>
+      <div class="menu">
+        <dI>
+          <dt>Feature</dt>
+          <dt>Company</dt>
+          <dt>Careers</dt>
+          <dt>About</dt>
+        </dI>
+      </div>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -20,6 +30,7 @@ export default defineComponent({
     CrossIcon,
   },
   setup(props) {
+    // let image = ref('./../assets/images/favicon-32x32.png')
     return {};
   },
 });
