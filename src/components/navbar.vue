@@ -18,23 +18,27 @@
       <button class="active">Register</button>
     </div>
     <div class="menu_icon">
-      <MenuIcon />
+      <MenuIcon @click="sidebar = true" />
     </div>
   </div>
+  <Sidebar :sidebar="sidebar" @close="sidebar = false" />
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import Logo from "@/assets/svg/logo.vue";
 import Dropdown from "@/components/dropdown.vue";
 import MenuIcon from "@/assets/svg/menu.vue";
+import Sidebar from "@/components/sidebar.vue";
 
 export default defineComponent({
   components: {
     Logo,
     Dropdown,
     MenuIcon,
+    Sidebar,
   },
   setup() {
+    const sidebar = ref(false);
     const menu_one = ref([
       { name: "Todo List", icon: "todo-list" },
       { name: "Calender", icon: "calender" },
@@ -56,6 +60,7 @@ export default defineComponent({
       menu_one,
       menu_two,
       getImageUrl,
+      sidebar,
     };
   },
 });

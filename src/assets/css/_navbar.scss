@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 24px;
+    position: relative;
 
     .list {
         padding : unset;
@@ -55,6 +56,9 @@
 
     .menu_icon {
         display: none;
+        svg {
+            cursor: pointer;
+        }
     }
 
 }

@@ -1,0 +1,41 @@
+.backdrop {
+    position: fixed; 
+    z-index: 1; 
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7);
+    transition:  width 1000ms ease-in-out;
+    
+    &.open{
+        width: 100%;
+
+        aside {
+            width: 250px;
+        }
+    }
+
+    aside {
+        width: 0px;
+        position: fixed;
+        right: 0;
+        height: 100%;
+        background-color: white;
+        direction: right;
+        display: flex;
+        flex-direction: row-reverse;
+        transition: width 1000ms ease-in-out;
+        padding: 16px;
+    }
+}
+
+// .sidebar{
+//     height: 100%;
+//     background-color: white;
+//     width: 100px;
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+// }
