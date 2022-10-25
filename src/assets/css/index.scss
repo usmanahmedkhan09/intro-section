@@ -2,16 +2,20 @@
 @import "./_navbar.scss";
 @import "./dropdown";
 @import "./sidebar";
+@import "./home";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Space+Grotesk:wght@500&display=swap');
 
 
-html  {
-    
+html  { 
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
-    font-size: 62.5%;
-    
+    font-size: 62.5%; 
+}
+
+body {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -58,5 +62,11 @@ html  {
         }
     
     
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }

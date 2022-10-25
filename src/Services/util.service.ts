@@ -7,4 +7,4 @@ class UtilService
     }
 }
 
-export default UtilService
+export default new UtilService()
