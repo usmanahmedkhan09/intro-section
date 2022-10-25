@@ -34,4 +34,29 @@ html  {
         height: 100%;
         font-size: 1.6rem;
     }
+
+    .buttons {
+        display: flex;
+
+        button {
+            background-color: unset;
+            border: unset;
+            min-height: 35px;
+            min-width: 100px;
+            border-radius: 10px;
+            font-weight: 500;
+            color : $gray;
+            
+            &.active{
+                border : 1px solid $gray;
+
+            }
+
+            &:hover {
+                color : $black
+            }
+        }
+    
+    
+    }
 }

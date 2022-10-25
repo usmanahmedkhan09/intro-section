@@ -8,9 +8,11 @@
         <dl class="list">
           <dt>
             <span>Feature</span>
-            <span class="arrowdown"><ArrowDown /></span>
+            <span class="arrowdown" @click="showFeatures = !showFeatures"
+              ><ArrowDown
+            /></span>
           </dt>
-          <dd>
+          <dd v-if="showFeatures">
             <p>
               <TodoList />
               TodoList
@@ -30,13 +32,22 @@
           </dd>
           <dt>
             <span>Company</span>
-            <span class="arrowdown">
+            <span class="arrowdown" @click="showCompany = !showCompany">
               <ArrowDown />
             </span>
           </dt>
+          <dd v-if="showCompany">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </dd>
           <dt>Careers</dt>
           <dt>About</dt>
         </dl>
+      </div>
+      <div class="buttons">
+        <button>Login</button>
+        <button class="active">Register</button>
       </div>
     </div>
   </div>
@@ -66,8 +77,12 @@ export default defineComponent({
     TodoList,
   },
   setup(props) {
-    // let image = ref('./../assets/images/favicon-32x32.png')
-    return {};
+    const showFeatures = ref(false);
+    const showCompany = ref(false);
+    return {
+      showFeatures,
+      showCompany,
+    };
   },
 });
 </script>

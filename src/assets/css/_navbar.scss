@@ -28,31 +28,7 @@
         align-self: baseline;
     }
 
-    .buttons {
-        display: flex;
-
-
-        button {
-            background-color: unset;
-            border: unset;
-            min-height: 35px;
-            min-width: 100px;
-            border-radius: 10px;
-            font-weight: 500;
-            color : $gray;
-            
-            &.active{
-                border : 1px solid $gray;
     
-            }
-
-            &:hover {
-                color : $black
-            }
-        }
-        
-      
-    }
 
     .menu_icon {
         display: none;
@@ -72,7 +48,7 @@
             }
         }
         .buttons {
-            display: none;
+            display: none !important;
         }
 
         .menu_icon {

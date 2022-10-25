@@ -28,6 +28,7 @@
         transition: all 1000ms ease;
         visibility: hidden;
         padding: 16px;
+        color: $gray;
 
         .icon {
             width: fit-content;
@@ -37,32 +38,30 @@
         .menu {
             .list {
 
-               
-
                 dt {
                     display: flex;
-                    width: 80%;
+                    width: 60%;
                     justify-content: space-between;
                     align-items: center;
-                    font-size: 2.6rem;
-                    padding: 16px 0px;
+                    font-size: 2rem;
+                    padding: 10px 0px;
 
                     .arrowdown svg {
-                        min-width: 30px !important;
+                        min-width: 15px !important;
                         min-height: 10px !important;
                     }
 
                 }
                 dd {
                     p {
-                        font-size: 2.6rem;
+                        font-size: 2rem;
                         padding: 0px 0px 24px 32px;
                         display: flex;
                         align-items: center;
                         gap: 16px;
                         svg {
-                            min-width: 40px !important;
-                            min-height: 30px !important;
+                            min-width: 30px !important;
+                            min-height: 20px !important;
                         }
                     }
                     
@@ -71,6 +70,14 @@
             }
 
             
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            font-size: 2rem;
+
         }
     }
 }
