@@ -5,12 +5,38 @@
         <CrossIcon @click="$emit('close')" />
       </div>
       <div class="menu">
-        <dI>
-          <dt>Feature</dt>
-          <dt>Company</dt>
+        <dl class="list">
+          <dt>
+            <span>Feature</span>
+            <span class="arrowdown"><ArrowDown /></span>
+          </dt>
+          <dd>
+            <p>
+              <TodoList />
+              TodoList
+            </p>
+            <p>
+              <Calender />
+              Calendar
+            </p>
+            <p>
+              <Reminder />
+              Reminders
+            </p>
+            <p>
+              <Planning />
+              Planning
+            </p>
+          </dd>
+          <dt>
+            <span>Company</span>
+            <span class="arrowdown">
+              <ArrowDown />
+            </span>
+          </dt>
           <dt>Careers</dt>
           <dt>About</dt>
-        </dI>
+        </dl>
       </div>
     </div>
   </div>
@@ -18,6 +44,11 @@
 <script lang="ts">
 import { defineComponent, ref, watch } from "vue";
 import CrossIcon from "@/assets/svg/crossIcon.vue";
+import ArrowDown from "@/assets/svg/arrowdown.vue";
+import Reminder from "@/assets/svg/reminder.vue";
+import Planning from "@/assets/svg/planning.vue";
+import Calender from "@/assets/svg/calendar.vue";
+import TodoList from "@/assets/svg/todo-list.vue";
 
 export default defineComponent({
   props: {
@@ -28,6 +59,11 @@ export default defineComponent({
   },
   components: {
     CrossIcon,
+    ArrowDown,
+    Reminder,
+    Planning,
+    Calender,
+    TodoList,
   },
   setup(props) {
     // let image = ref('./../assets/images/favicon-32x32.png')
