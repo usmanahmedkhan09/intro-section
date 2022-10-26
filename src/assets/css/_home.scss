@@ -4,11 +4,9 @@
     justify-content: center;
     align-items: center;
     height: calc(100% - 87px);
-    // background-color: aqua;
 
     .home_page {
-        width: 80%;
-        // border: 1px solid black;
+
         height: inherit;
         display: flex;
 
@@ -20,7 +18,7 @@
             flex-direction: column;
             padding: 50px;
 
-            &:first-child {
+            .wrapper {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
@@ -28,7 +26,7 @@
             }
     
             h1 {
-                font-size: 5.2rem;
+                font-size: 6.2rem;
                 line-height: 5rem
             }
 
@@ -61,9 +59,9 @@
 
         .icons{
             display: flex;
-            gap: 3rem;
+            // gap: 3rem;
             align-items: center;
-            align-items: flex-end;
+            justify-content: space-between;
         }
         
     }

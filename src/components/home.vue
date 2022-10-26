@@ -2,7 +2,7 @@
   <div class="container">
     <div class="home_page">
       <div class="des">
-        <div>
+        <div class="wrapper">
           <div class="title">
             <h1>Make</h1>
             <h1>Remote Work</h1>
