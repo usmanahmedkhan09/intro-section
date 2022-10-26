@@ -1,10 +1,27 @@
 <template>
-  <div class="home">
-    <div class="des">
-      <h1>Make Remote Work</h1>
-    </div>
-    <div class="image">
-      <img :src="getImage('image-hero-desktop.png')" alt="" />
+  <div class="container">
+    <div class="home_page">
+      <div class="des">
+        <div class="title">
+          <h1>Make</h1>
+          <h1>Remote Work</h1>
+        </div>
+        <div class="sub_titles">
+          <p>get your team in sync, no matter your location.</p>
+          <p>
+            Streamline processes, create team rituals, and watch productivity
+            soar
+          </p>
+        </div>
+        <div class="button">
+          <button class="button">Learn More</button>
+        </div>
+      </div>
+      <div class="image_wrapper">
+        <div class="image">
+          <img :src="getImage('image-hero-desktop.png')" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </template>

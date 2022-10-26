@@ -1,4 +1,4 @@
-.home {
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,23 +6,53 @@
     height: calc(100% - 87px);
     background-color: aqua;
 
-    .des {
-        flex : 50%;
-        max-width: 50%;
-        height : inherit;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-            font-size: 5.2rem;
-        }
-    }
-
-    .image {
-        flex : 50%;
-        max-width: 50%;
+    .home_page {
+        width: 80%;
+        border: 1px solid black;
         height: inherit;
+        display: flex;
 
+        .des {
+            flex : 50%;
+            max-width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 50px;
+    
+            h1 {
+                font-size: 5.2rem;
+                line-height: 5rem
+            }
+
+            .sub_titles {
+                margin: 32px 0px;
+
+                p {
+                    color: $gray;
+                }
+            }
+
+            button{
+                border: none;
+                background: black;
+                color: $white;
+                min-height: 5rem;
+                min-width: 14rem;
+                border-radius: 10px;
+            }
+        }
+    
+        .image_wrapper {
+            flex : 50%;
+    
+            .image {
+               height: 100%;
+               width: 100%;
+            }
+        }
+        
     }
+
+   
 }
