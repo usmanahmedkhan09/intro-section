@@ -9,6 +9,7 @@
 
         height: inherit;
         display: flex;
+        padding: 0 90px;
 
         .des {
             flex : 50%;
@@ -40,6 +41,7 @@
 
                 p {
                     color: $gray;
+                    font-size: 2.3rem;
                 }
             }
 
