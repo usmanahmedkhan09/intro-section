@@ -7,51 +7,51 @@
       <div class="menu">
         <dl class="list">
           <dt>
-            <span role="feature">Feature</span>
-            <span role="arrow-down" class="arrowdown" @click="showFeatures = !showFeatures"
+            <span>Feature</span>
+            <span class="arrowdown" @click="showFeatures = !showFeatures"
               ><ArrowDown
             /></span>
           </dt>
           <dd v-if="showFeatures">
-            <p role="todolist">
+            <p>
               <TodoList />
               TodoList
             </p>
-            <p role="calender">
+            <p>
               <Calender />
               Calendar
             </p>
-            <p role="reminder">
+            <p>
               <Reminder />
               Reminders
             </p>
-            <p role="planning">
+            <p>
               <Planning />
               Planning
             </p>
           </dd>
           <dt>
-            <span role="company">Company</span>
-            <span role="arrow" class="arrowdown" @click="showCompany = !showCompany">
+            <span>Company</span>
+            <span class="arrowdown" @click="showCompany = !showCompany">
               <ArrowDown />
             </span>
           </dt>
           <dd v-if="showCompany">
-            <p role="history">History</p>
-            <p role="team">Our Team</p>
-            <p role="blog">Blog</p>
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
           </dd>
           <dt>
-            <dd role="careers">Careers</dd>
+            <dd>Careers</dd>
           </dt>
           <dt>
-            <dd role="about">About</dd>
+            <dd>About</dd>
           </dt>
         </dl>
       </div>
-      <div class="buttons" role="button">
-        <button role="login">Login</button>
-        <button class="active" role="register">Register</button>
+      <div class="buttons">
+        <button>Login</button>
+        <button class="active">Register</button>
       </div>
     </div>
   </div>
