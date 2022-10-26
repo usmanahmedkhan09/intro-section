@@ -4,19 +4,21 @@
       <div class="des">
         <div class="wrapper">
           <div class="title">
-            <h1>Make</h1>
-            <h1>Remote Work</h1>
-            <h2>Make Remote Work</h2>
+            <h1 role="ti">Make</h1>
+            <h1 role="titl">Remote Work</h1>
+            <h2 role="full-title">Make Remote Work</h2>
           </div>
           <div class="sub_titles">
-            <p>get your team in sync, no matter your location.</p>
-            <p>
+            <p role="location">
+              get your team in sync, no matter your location.
+            </p>
+            <p role="stramline">
               Streamline processes, create team rituals, and watch productivity
               soar
             </p>
           </div>
-          <div class="button">
-            <button class="button">Learn More</button>
+          <div class="button" role="home-button">
+            <button class="button" role="learnmore">Learn More</button>
           </div>
         </div>
         <div class="icons">
@@ -27,11 +29,11 @@
         </div>
       </div>
       <div class="image_wrapper">
-        <div class="desktop">
-          <img :src="getImage('image-hero-desktop.png')" alt="" />
+        <div class="desktop" role="desktop-image">
+          <img :src="getImage('image-hero-desktop.png')" alt="hero" />
         </div>
-        <div class="mobile">
-          <img :src="getImage('image-hero-mobile.png')" alt="" />
+        <div class="mobile" role="mobile-image">
+          <img :src="getImage('image-hero-mobile.png')" alt="hero-mobile" />
         </div>
       </div>
     </div>
