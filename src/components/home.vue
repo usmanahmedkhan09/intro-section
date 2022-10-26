@@ -6,6 +6,7 @@
           <div class="title">
             <h1>Make</h1>
             <h1>Remote Work</h1>
+            <h2>Make Remote Work</h2>
           </div>
           <div class="sub_titles">
             <p>get your team in sync, no matter your location.</p>
@@ -26,8 +27,11 @@
         </div>
       </div>
       <div class="image_wrapper">
-        <div class="image">
+        <div class="desktop">
           <img :src="getImage('image-hero-desktop.png')" alt="" />
+        </div>
+        <div class="mobile">
+          <img :src="getImage('image-hero-mobile.png')" alt="" />
         </div>
       </div>
     </div>

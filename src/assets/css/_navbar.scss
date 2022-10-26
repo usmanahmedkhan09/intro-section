@@ -41,7 +41,7 @@
 
 @media screen and (max-width : 768px) {
     .navbar {
-
+        padding: 16px;
         .list {
             li:not(:first-child) {
                 display: none;
