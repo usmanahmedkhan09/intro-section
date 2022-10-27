@@ -1,10 +1,14 @@
 <template>
   <div class="dropdown" ref="dropdown">
-    <div class="dropdown--header" @click.stop="isOpen = !isOpen">
+    <div
+      class="dropdown--header"
+      :class="isOpen ? 'open' : 'close'"
+      @click.stop="isOpen = !isOpen"
+    >
       <p>
         {{ title }}
       </p>
-      <ArrowDown />
+      <ArrowDown class="arrow_svg" />
     </div>
     <div v-if="isOpen" class="dropdown--body">
       <ul>

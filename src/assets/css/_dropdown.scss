@@ -10,6 +10,21 @@
         align-items: center;
         width: fit-content;
         gap : 10px;
+
+        &.open {
+            svg {
+                transform: rotate(180deg);
+                transition: all 500ms ease;
+            }
+        }
+
+        &.close {
+            svg {
+                transform: rotate(0deg);
+                transition: all 500ms ease;
+            }
+        }
+       
     }
     
     &--body {
@@ -26,7 +41,7 @@
 
         ul {
             padding: 16px 16px;
-        } s
+        } 
 
         li {
             list-style: none;
