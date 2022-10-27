@@ -8,7 +8,7 @@
         <dl class="list">
           <dt>
             <span>Feature</span>
-            <span class="arrowdown" @click="showFeatures = !showFeatures"
+            <span class="arrowdown"  @click="showFeatures = !showFeatures"
               ><ArrowDown
             /></span>
           </dt>
@@ -32,7 +32,8 @@
           </dd>
           <dt>
             <span>Company</span>
-            <span class="arrowdown" @click="showCompany = !showCompany">
+            <span class="arrowdown" 
+            @click="showCompany = !showCompany">
               <ArrowDown />
             </span>
           </dt>

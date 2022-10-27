@@ -80,6 +80,19 @@
    
 }
 
+@media (min-width : 768px) and (max-width : 1200px){
+    .container{
+        height: 100%;
+        .home_page{
+            height: unset;
+            padding: 0px 16px;
+            gap: 16px;
+            .des {      
+                padding: unset;
+            }
+        }
+    }
+}
 
 @media screen and (max-width : 768px) {
         .container{
@@ -87,8 +100,8 @@
             .home_page {
                 flex-direction: column-reverse;
                 height: -webkit-fill-available;
-
-    
+                padding: unset;
+                
                 .image_wrapper {
     
                     .desktop {
